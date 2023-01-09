@@ -97,8 +97,6 @@ var analysis;
 var net = 0;
 var netArray = [];
 var netChangeSum = 0;
-// least min
-// greatest max
 var least =['', 9999999999999]
 var greatest = ['',0]
 
@@ -130,11 +128,11 @@ for(var index = 0; index < netArray.length; index++){
 
 average = Math.round((netChangeSum / 86) * 100) /100;
 
-//concatenation
+//Concatenation
 analysis = 'Finanacial Analysis' + '\n'+
 '-------------------------' + '\n'+
-'Total Months: ' + months + '\n'; +
-'Total: $' + total + '\n' ; +
+'Total Months: ' + months + '\n' +
+'Total: $' + total + '\n'  +
 'Average Change: ' + average + '\n' +
 'Greatest Increase in Profit: ' + greatest [0] + ':$' +greatest[1] +'\n' +
 'Greatest Decrease in Profit: ' + least [0] + ': $' + least[1] + '\n';
